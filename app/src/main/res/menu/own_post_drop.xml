@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/share_ins"
+        android:title="Share Instantly"
+        android:visible="true"
+        android:icon="@mipmap/inshare"
+        />
+
+    <item
+        android:id="@+id/share_pos"
+        android:title="Share with quick post"
+        android:visible="true"
+        android:icon="@mipmap/inshare"
+        />
+
+    <!--<item
+        android:id="@+id/share"
+        android:title="Share Post Via..."
+        android:visible="true"
+        android:icon="@mipmap/share_"
+        />-->
+
+    <item
+        android:id="@+id/delete"
+        android:title="Delete Post"
+        android:visible="true"
+        android:icon="@mipmap/delete"
+        />
+
+    <!--<item
+        android:id="@+id/echo"
+        android:title="Echo Post"
+        android:visible="true"
+        android:icon="@mipmap/echo"
+        />-->
+</menu>

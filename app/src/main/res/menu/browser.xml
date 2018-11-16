@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/refresh"
+        android:title="Refresh page"
+        android:visible="true"
+        android:icon="@mipmap/refresh"
+        />
+
+    <item
+        android:id="@+id/browse"
+        android:title="Open link in browser"
+        android:visible="true"
+        android:icon="@mipmap/broswer_"
+        />
+
+    <item
+        android:id="@+id/copy"
+        android:title="Copy link"
+        android:visible="true"
+        android:icon="@mipmap/copy_"
+        />
+
+    <item
+        android:id="@+id/share_pos"
+        android:title="Share with post"
+        android:visible="true"
+        android:icon="@mipmap/inshare"
+        />
+
+    <item
+        android:id="@+id/share"
+        android:title="Share link via..."
+        android:visible="true"
+        android:icon="@mipmap/share_"
+        />
+
+</menu>

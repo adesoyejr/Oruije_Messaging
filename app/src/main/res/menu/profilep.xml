@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Services">
+        <menu>
+            <group android:checkableBehavior="all"
+                    android:id="@+id/first">
+
+
+                <item
+                    android:id="@+id/popular"
+                    android:title="Popular"
+                    android:icon="@drawable/star"
+                    />
+        <item
+            android:id="@+id/education"
+            android:title="Education"
+            android:icon="@drawable/ic_school_black_24dp"
+            />
+        <item
+            android:id="@+id/talents"
+            android:title="Talents"
+            android:icon="@drawable/talent"
+            />
+        <item
+            android:id="@+id/explore"
+            android:title="Explore"
+            android:icon="@drawable/explore"
+            />
+                <item
+                    android:id="@+id/company"
+                    android:title="Company Review"
+                    android:icon="@drawable/ic_rate_review_black_24dp"
+                    />
+
+              <!--  <item
+                    android:id="@+id/recruit"
+                    android:title="Recruiting Solution"
+                    android:icon="@drawable/recruit"
+                    />-->
+
+                <item
+                    android:id="@+id/delivery"
+                    android:title="Become A Deliverer"
+                    android:icon="@drawable/delivery"
+                    />
+
+                <item
+                    android:id="@+id/top_deliverers"
+                    android:title="Top Deliverers"
+                    android:icon="@drawable/top_del"
+                    />
+                <item
+                    android:id="@+id/commerce"
+                    android:title="Commerce"
+                    android:icon="@drawable/transact"
+                    />
+
+               <!-- <item
+                    android:id="@+id/arana_pay"
+                    android:title="Arana Pay"
+                    android:icon="@drawable/aranapay"
+                    />-->
+
+    </group>
+        </menu>
+    </item>
+
+    <item android:title="Account">
+        <menu>
+            <group android:checkableBehavior="all"
+                android:id="@+id/third">
+                <item
+                    android:id="@+id/account"
+                    android:title="Manage Account"
+                    android:icon="@drawable/ic_supervisor_account_black_24dp"
+                    />
+
+                <item
+                    android:id="@+id/verification"
+                    android:title="Verification Cards"
+                    android:icon="@drawable/null_verify"
+                    />
+
+                <item
+                    android:id="@+id/help"
+                    android:title="Help Center"
+                    android:icon="@drawable/ic_help_black_24dp"
+                    />
+
+                <item
+                    android:id="@+id/pages"
+                    android:title="Pages"
+                    android:icon="@drawable/ic_library_books_black_24dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    app:actionLayout="@layout/counter"
+                    />
+
+
+                <item
+                    android:id="@+id/settings"
+                    android:title="Settings and Privacy"
+                    android:icon="@drawable/ic_settings_black_24dp"
+                    />
+
+               <!-- <item
+                    android:id="@+id/ads"
+                    android:title="Ads"
+                    android:icon="@drawable/adss"
+                    />-->
+
+                <item
+                    android:id="@+id/log"
+                    android:title="Log Out"
+                    android:icon="@drawable/power"
+                    />
+            </group>
+        </menu>
+    </item>
+</menu>

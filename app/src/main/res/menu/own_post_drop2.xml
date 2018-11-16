@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item
+        android:id="@+id/share"
+        android:title="Share Post Via..."
+        android:visible="true"
+        android:icon="@mipmap/share_"
+        />-->
+
+    <item
+        android:id="@+id/delete"
+        android:title="Delete Post"
+        android:visible="true"
+        android:icon="@mipmap/delete"
+        />
+</menu>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add"
+        android:title="Add Page"
+        android:visible="true"
+        android:icon="@mipmap/add"
+        />
+
+    <item
+        android:id="@+id/share_ins"
+        android:title="Share Instantly"
+        android:visible="true"
+        android:icon="@mipmap/inshare"
+        />
+
+    <item
+        android:id="@+id/share_pos"
+        android:title="Share with quick post"
+        android:visible="true"
+        android:icon="@mipmap/inshare"
+        />
+
+    <item
+        android:id="@+id/share"
+        android:title="Share Post Via..."
+        android:visible="true"
+        android:icon="@mipmap/share_"
+        />
+
+    <item
+        android:id="@+id/block"
+        android:title="Block Page"
+        android:visible="true"
+        android:icon="@mipmap/block"
+        />
+
+    <item
+        android:id="@+id/report"
+        android:title="Report Post"
+        android:visible="true"
+        android:icon="@mipmap/report_"
+        />
+
+    <!--<item
+        android:id="@+id/echo"
+        android:title="Echo Post"
+        android:visible="true"
+        android:icon="@mipmap/echo"
+        />-->
+
+</menu>

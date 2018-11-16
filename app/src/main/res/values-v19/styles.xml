@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="settingsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/OruijeBlue</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/OruijeBlue</item>
+        <item name="colorAccent">@color/OruijeBlue</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

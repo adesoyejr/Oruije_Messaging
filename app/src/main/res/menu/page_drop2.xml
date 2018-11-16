@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/message"
+        android:title="Send Message"
+        android:visible="true"
+        android:icon="@mipmap/message_blue"
+        />
+
+    <item
+        android:id="@+id/report"
+        android:title="Report Page"
+        android:visible="true"
+        android:icon="@mipmap/report_"
+        />
+</menu>

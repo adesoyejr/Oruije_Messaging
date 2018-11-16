@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/OruijeBlue</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/OruijeBlue</item>
+        <item name="colorAccent">@color/OruijeBlue</item>
+    </style>
+
+    <style name="settingsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/OruijeBlue</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/OruijeBlue</item>
+        <item name="colorAccent">@color/OruijeBlue</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>
+    </style>
+
+    <style name="more" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/OruijeBlue</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/OruijeBlue</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="uneditable" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">#FFAAAAAA</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/OruijeGray</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="TooltipTextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+</resources>

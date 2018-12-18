@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".message_search">
+
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/OruijeBlue"
+        android:elevation="9dp"
+        android:layoutMode="clipBounds"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/backg"
+                android:layout_toLeftOf="@+id/send"
+                android:background="@drawable/white_normal"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:gravity="center_vertical"
+                android:hint="Search for people"
+                android:singleLine="true"
+                android:textColorLink="@color/OruijeBlue"
+                android:textSize="@dimen/big"
+                android:theme="@style/AppTheme" />
+
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/search"
+                android:layout_alignRight="@+id/search"
+                android:layout_alignTop="@+id/search"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:onClick="clear"
+                android:src="@drawable/ic_cancel_black_24dp"
+                android:visibility="invisible" />
+
+
+            <ImageView
+                android:id="@+id/backg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:onClick="back"
+                android:src="@mipmap/back_white" />
+
+            <ImageView
+                android:id="@+id/send"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/send"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

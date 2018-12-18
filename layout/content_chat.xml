@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.arana.oruije_messaging.Chat"
+    tools:showIn="@layout/activity_chat">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/single"
+        android:visibility="visible">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:paddingBottom="20dp"
+            android:stackFromBottom="true"
+            android:clipToPadding="false"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/chats">
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/multiple">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:id="@+id/initials"
+            android:orientation="horizontal">
+
+            <!--<TextView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:gravity="center"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="P"-->
+            <!--android:layout_marginRight="@dimen/radius"-->
+            <!--android:textStyle="bold"-->
+            <!--android:background="@drawable/blue_circle"/>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:gravity="center"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="P"-->
+            <!--android:textStyle="bold"-->
+            <!--android:background="@drawable/blue_circle"/>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/initials"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:text="@string/multi_post"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Each recipient will get a message from you\nReplies will appear in individual conversations."/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/multi_post_listview"
+                android:divider="@null"
+                android:stackFromBottom="true"
+                android:dividerHeight="0dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="@dimen/small"
+                android:clipToPadding="false"
+                android:layout_marginBottom="47dp">
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/white_top_stroke"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="@+id/select_image_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/pick_from_camera_or_gallery"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|center"
+            android:layout_weight="1"
+            android:contentDescription="@string/choose_photo_from_gallery"
+            android:src="@mipmap/photo_library" />
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:autofillHints="@string/type_a_message"
+            android:background="@null"
+            android:hint="@string/type_a_message"
+            android:inputType="textMultiLine"
+            android:maxHeight="70dp"
+            android:paddingLeft="@dimen/small"
+            android:paddingTop="3dp"
+            android:paddingRight="@dimen/small"
+            android:paddingBottom="3dp"
+            android:scrollbars="vertical" />
+
+        <ImageButton
+            android:id="@+id/send_message"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/radius"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:clickable="true"
+            android:contentDescription="@string/send_message"
+            android:elevation="10dp"
+            android:src="@drawable/send_blue" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/select_image_container">
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
+
